@@ -8,6 +8,8 @@ An AI-powered C++ chatbot using Object-Oriented Programming concepts, featuring 
 
 ---
 
+There are two files, one includes all the features Aesthetic Styles  like login and much more , and the other  only includes the basics of working with it
+
 ## 🧠 Features
 
 ### 🔹 Chatbot (R.A.Y.N)
