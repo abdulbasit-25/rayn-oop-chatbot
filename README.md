@@ -1,10 +1,10 @@
-# rayn-oop-chatbot
+# R.A.Y.N -oop-chatbot
 An AI-powered C++ chatbot using Object-Oriented Programming concepts, featuring a built-in MathBot assistant
 
 
 # R.A.Y.N - AI-Powered OOP Chatbot
 
-**R.A.Y.N (Responsive AI with Neural Processing)** is a console-based chatbot developed in **C++** using core **Object-Oriented Programming (OOP)** principles. It simulates human-like conversations and includes a built-in **MathBot** assistant for basic arithmetic operations.
+**R.A.Y.N (Responsive AI for Your Need)** is a console-based chatbot developed in **C++** using core **Object-Oriented Programming (OOP)** principles. It simulates human-like conversations and includes a built-in **MathBot** assistant for basic arithmetic operations.
 
 ---
 
