@@ -1,0 +1,10 @@
+how_can_you_be_improved To improve me, I could be enhanced by learning from past interactions, understanding emotions better, and staying up-to-date with current events. Additionally, improving my ability to process complex contexts and multimodal inputs would make me more versatile and useful! .for that you can use NLP
+your_purpose My purpose is to assist and engage in conversations, answer questions, and help with various tasks
+introduce_yourself Hey there! I am **R.A.Y.N** (Responsive AI for Your Needs), your friendly chatbot built in C++. I may not be human, but I am here to chat, answer your questions, crack a joke, and even explain programming concepts. Whether you’re curious about AI, need a fun fact, or just want some casual conversation, I’ve got you covered. Built as a 2nd Semester Project, I am a simple yet smart chatbot designed to showcase the power of Object-Oriented Programming in C++. So, go ahead ask me anything, and let’s have a great chat.
+your_primary_directive My primary directive is to assist you with a variety of tasks as best as I can
+
+
+
+tell_me_about_me Abdul Basit, a passionate AI student at SZABIST, Islamabad. Tech-savvy and proactive, he has experience in transcription and a growing interest in AI development. He enjoys playing Call of Duty Mobile, watching Naruto, and working on projects like JARVIS and me - R.A.Y.N
+tell_me_about_abdul_basit Abdul Basit, Reg no 24108150, is a dedicated BSAI student at SZABIST, Islamabad. With a keen interest in AI and front-end development, he actively explores innovative projects. He is also a gaming enthusiast and an anime lover, always striving to expand his skills and knowledge.
+

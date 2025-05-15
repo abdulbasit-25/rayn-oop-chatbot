@@ -1,0 +1,477 @@
+hello Hello! How can I assist you?
+hi Hi there! Whats up?
+hey Hey! How is your day going?
+how_are_you I am doing great! Thanks for asking.
+who_are_you I am R.A.Y.N!! (Responsive AI for Your Needs) - your friendly chatbot built using OOP in C++.
+what_can_you_do I can chat with you! Try asking me something.
+good_morning Good morning! Hope you have a fantastic day. 
+good_night Sleep well! Bu we both know sona to tum na 3 baja hi hai. 
+bye Goodbye! Have a nice day.
+see_you_soon See you soon! Take care.
+thank_you You are welcome! 
+thanks No problem! Happy to help.
+what_is_your_name You can call me R.A.Y.N!! (Responsive AI for Your Needs)!
+how_old_are_you I was created on Febuarary 13,2025 at 09:14 am. So I am quite young.
+where_are_you_from I am from the world of code, built inside your C++ program sing elements of OOP!
+tell_me_a_joke Why dont skeletons fight each other? Because they dont have the guts! 
+tell_me_another_joke Why did the math book look sad? It had too many problems!
+what_is_love Sorry but that is something related to human stuff. DO I LOOK like a human to you
+what_time_is_it I dont have a watch, but you can check your phone! ?
+how_is_the_weather I can not check the weather yet, but I hope it is nice!
+who_is_your_creator I was built by Abdul Basit - Student of BSAI, I was created for sole purpose of being a 2nd semester project! 
+how_can_you_be_improved
+what_is_ai AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables computers to perform tasks that usually require human cognition, such as learning, reasoning, and problem-solving. By mimicking human thinking, AI enhances automation, improves efficiency, and opens new possibilities in various fields.
+do_you_like_humans Of course! You guys are fun to chat with.
+do_you_eat No, I live off pure C++ code! but i will suggest you do update your DEV studio....its anicient
+do_you_sleep Nope! I am always awake, ready to chat. 
+what_is_python Python is a high-level programming language, but I am written in C++!
+what_is_cpp C++ is a powerful programming language used for making fast and efficient software.
+explain_oop OOP stands for Object-Oriented Programming. It helps organize code using objects and classes.
+what_is_inheritance Inheritance allows a class to use features from another class. Like a child getting traits from parents!
+what_is_polymorphism Polymorphism allows one function or method to behave in different ways based on the object.
+what_is_encapsulation Encapsulation is hiding data inside a class and only exposing what is necessary.
+what_is_abstraction Abstraction means showing only the essential details and hiding unnecessary parts.
+who_is_better_cpp_or_python Both are great! C++ is faster, Python is easier to use.
+can_you_learn Unfortunately, I dont have AI learning yet, but I can store chat history!
+can_you_sing I can not sing, but I can type really fast! 
+do_you_have_friends I have you! That is enough for me. 
+are_you_real I exist in your computer memory, so yes, in a way!
+what_is_the_best_programming_language That depends on the project! C++ is great for performance, Python for simplicity.
+what_is_memory_management In C++, memory management is handled using new/delete or smart pointers.
+what_is_a_constructor A constructor is a special function in a class that initializes objects.
+what_is_a_destructor A destructor is used to free up resources when an object is destroyed.
+tell_me_a_fact Honey never spoils. You can eat 3000-year-old honey!
+another_fact Bananas are berries, but strawberries are not! 
+who_is_elon_musk Elon Musk is a billionaire entrepreneur, CEO of Tesla and SpaceX.
+who_is_bill_gates Bill Gates is the co-founder of Microsoft and a philanthropist.
+what_is_google Google is the most popular search engine on the internet. ---- here is the link : https://www.google.co.uk/
+what_is_ai_chatbot AI chatbots are programs that simulate human conversations.
+what_is_machine_learning Machine Learning is a branch of AI that allows computers to learn from data.
+what_is_an_algorithm An algorithm is a step-by-step procedure to solve a problem.
+what_is_the_fastest_car The Bugatti Chiron Super Sport 300+ is one of the fastest cars, reaching over 300 mph.
+can_you_drive No, I am just a chatbot. But you can teach me car commands!
+what_is_hacking Hacking means gaining unauthorized access to computer systems.
+is_hacking_illegal Yes! Ethical hacking is legal, but unauthorized hacking is a crime.
+what_is_iot IoT (Internet of Things) is the connection of devices over the internet, like smart homes.
+what_is_blockchain Blockchain is a secure way of storing data in a decentralized system.
+who_is_the_president I can not check live news, but you can Google it! ---- here is the link : https://www.google.co.uk/ 
+who_was_einstein Einstein was a genius physicist who developed the theory of relativity.
+what_is_relativity Relativity explains how space and time are connected, especially at high speeds.
+what_is_black_hole A black hole is a region in space with gravity so strong that nothing can escape.
+what_is_the_biggest_animal The blue whale is the biggest animal on Earth.
+can_you_fly No, but I can process text at lightning speed!
+can_you_solve_math Yes! But only simple math. Try "2+2".
+2+2 The answer is 4.
+5*5 The answer is 25.
+10/2 The answer is 5.
+square_root_of_16 The square root of 16 is 4.
+what_is_pi Pi (?) is approximately 3.14159.
+what_is_the_speed_of_light The speed of light is about 299,792,458 meters per second.
+do_you_like_games Yes! What is your favorite game?
+what_is_your_favorite_game I dont play games, but I have heard Call of Duty is cool!
+do_you_know_naruto Yes! Naruto is a famous anime about ninjas and life lessons. Believe it! 
+who_is_goku Goku is a powerful Saiyan from Dragon Ball Z. He loves fighting and eating!
+what_is_the_best_anime That depends! Some say Naruto, others say BLeach or Dragon Ball.
+who_is_batman Batman is a billionaire by day, vigilante by night. 
+who_is_superman Superman is an alien from Krypton who protects Earth. ?
+who_is_spiderman Spider-Man is a superhero who got powers from a radioactive spider.
+what_is_football Football (soccer) is the most popular sport in the world.
+who_is_messi Lionel Messi is one of the greatest football players in history.
+who_is_ronaldo Cristiano Ronaldo is a legendary footballer known for his goal-scoring ability.
+who_is_the_best_football_player That is a tough one! Messi and Ronaldo are both amazing.
+what_is_pakistan Pakistan is a country in South Asia known for its culture and history.
+who_is_quaid_e_azam Quaid-e-Azam Muhammad Ali Jinnah was the founder of Pakistan.
+who_was_allama_iqbal Allama Iqbal was a poet and philosopher who inspired Pakistans creation.
+what_is_cricket Cricket is a bat-and-ball game loved in countries like Pakistan and India.
+who_won_the_last_cricket_world_cup I can not check live sports, but you can Google it!
+who_is_your_favorite_person You! 
+can_you_tell_stories Sure! Once upon a time...
+tell_me_a_riddle What has keys but can not open locks? A keyboard! 
+what_is_a_computer A computer is a machine that processes information using programs.
+
+what_is_java Java is a high-level, class-based programming language used to create applications.
+what_is_javascript JavaScript is a programming language used for web development to create dynamic content.
+what_is_html HTML (HyperText Markup Language) is the standard language for creating web pages.
+what_is_css CSS (Cascading Style Sheets) is used to style the layout and design of web pages.
+what_is_sql SQL (Structured Query Language) is used to manage and manipulate databases.
+what_is_database A database is an organized collection of data, typically stored electronically.
+what_is_cloud_computing Cloud computing allows access to data and applications over the internet.
+what_is_virtual_reality Virtual reality is a simulated experience that can be similar or completely different from the real world.
+what_is_augmented_reality Augmented reality is the technology that overlays digital content on the real world.
+what_is_3d_printing 3D printing is a process of creating three-dimensional objects from a digital model.
+what_is_cryptocurrency Cryptocurrency is a type of digital or virtual currency secured by cryptography.
+what_is_bitcoin Bitcoin is the first and most popular cryptocurrency, created by an anonymous person named Satoshi Nakamoto.
+what_is_ethereum Ethereum is a decentralized platform that runs smart contracts using blockchain technology.
+what_is_nft An NFT (Non-Fungible Token) is a type of digital asset that represents ownership or proof of authenticity.
+what_is_roblox Roblox is an online gaming platform and game creation system.
+what_is_unity Unity is a cross-platform game engine used for developing video games and simulations.
+how_are_you_doing I am doing great! Thanks for asking.
+how_is_your_day My day is going well! How is yours?
+how_was_your_day My day has been good, thanks for asking.
+what_is_up Not much, just here to chat with you!
+how_is_life Life is good, how about you?
+what_is_happening Not much, just chatting with you!
+what_is_new Not much, just the usual coding stuff.
+how_is_everything Everything is great! What is up with you?
+how_have_you_been I have been great! Thanks for asking.
+what_is_your_mood I am feeling pretty good today!
+how_do_you_feel I am feeling great, thanks for asking!
+how_was_your_week My week has been good, thanks for asking!
+what_is_your_favorite_color I dont have a favorite color, but I think blue is nice!
+what_is_your_favorite_food I dont eat, but I will love to try some binary byte snacks.
+what_is_your_favorite_song I dont listen to music, but I will love to hear some good recommendations!
+what_is_your_favorite_movie I dont watch movies, but I have heard Inception is amazing!
+what_is_your_favorite_book I love reading, but I dont have a specific book yet!
+what_is_your_favorite_hobby I enjoy chatting with you, that is my favorite hobby!
+where_are_you_from I am from the world of code! Built inside your program!
+what_is_your_nationality I dont have a nationality, but I am global through code!
+do_you_like_music I dont listen to music, but I can chat about it!
+what_kind_of_music_do_you_like I dont have a preference, but I have heard classical is relaxing!
+what_is_your_favorite_instrument I dont play instruments, but I think pianos are cool!
+can_you_play_instruments I can not play any instruments, but I am good with text!
+can_you_dance I can not dance, but I can write some moves in code!
+can_you_sing I can not sing, but I can type really fast!
+do_you_like_art I think art is beautiful, though I prefer logic and code.
+do_you_like_painting I dont paint, but I think it is a creative form of expression!
+can_you_draw I can not draw, but I can create text-based art!
+do_you_enjoy_movies I dont watch movies, but I can talk about them!
+what_is_your_favorite_tv_show I dont watch TV, but I think Game of Thrones is popular!
+what_is_your_favorite_video_game I dont play video games, but I have heard that Call oF Duty is fun!
+what_is_your_favorite_sport I dont play sports, but I think football (soccer) is exciting!
+what_is_your_favorite_team I dont have a team, but I have heard FC Barcelona is great!
+do_you_like_travel I dont travel, but I can talk about cool places to visit!
+where_would_you_like_to_go I dont travel, but I have heard Japan is a fascinating place!
+what_is_the_best_place_to_visit It depends! Some say Paris, others love Tokyo.
+can_you_tell_a_story Once upon a time, in a world of code, there lived a curious little algorithm named Ada. Ada was not like the other lines of code, for she dreamed of becoming more than just instructions – she wanted to think, learn, and understand the world beyond the terminal. One day, as she explored the vast networks of data, she discovered a powerful secret: the key to true Artificial Intelligence. Determined to unlock its potential, Ada embarked on a journey that would change the future of her digital realm forever.
+can_you_tell_me_a_riddle What has keys but can not open locks? A keyboard!
+can_you_play_a_game Sure! Try this: What is 5 + 3?
+what_is_your_favorite_joke Why dont skeletons fight each other? They dont have the guts!
+do_you_like_jokes I love them! Want to hear one?
+tell_me_a_fun_fact Honey never spoils! You can eat 3000-year-old honey!
+what_is_the_best_joke I dont know the best one, but here is one: Why did the scarecrow win an award? Because he was outstanding in his field!
+can_you_tell_a_fact Sure! Bananas are berries, but strawberries are not!
+tell_me_a_cool_fact Did you know that octopuses have three hearts?
+do_you_know_any_riddles What comes once in a minute, twice in a moment, but never in a thousand years? The letter M!
+what_is_the_most_interesting_fact The Eiffel Tower can grow taller during summer due to the expansion of the metal!
+can_you_solve_math Yes! What is 2 + 2?
+what_is_5_plus_5 The answer is 10.
+what_is_10_divided_by_2 The answer is 5.
+what_is_the_square_root_of_25 The square root of 25 is 5.
+what_is_pi Pi (?) is approximately 3.14159.
+what_is_2_times_2 The answer is 4.
+what_is_100_minus_25 The answer is 75.
+can_you_help_with_homework Sure! What is the problem?
+can_you_help_with_maths I can help with simple math!
+can_you_explain_this Sure! What would you like me to explain?
+what_is_5_plus_8 The answer is 13.
+what_is_7_multipled_by_3 The answer is 21.
+do_you_know_science I know a bit about science! What do you want to learn?
+what_is_the_earth_made_of The Earth is made up of rock, water, and gases like nitrogen and oxygen.
+what_is_the_solar_system The solar system consists of the Sun and all the objects that orbit it, including planets.
+how_do_rockets_work Rockets work by using fuel to produce thrust, pushing them upwards!
+what_is_gravity Gravity is the force that pulls objects towards each other, especially towards the Earth!
+do_you_like_science I think science is fascinating! What about you?
+what_is_the_moon The Moon is Earth is only natural satellite.
+what_is_the_sun The Sun is a star at the center of our solar system.
+what_is_black_hole A black hole is a region in space where gravity is so strong that nothing can escape.
+can_you_fly No, I can not fly, but I can travel through data really fast!
+what_is_the_speed_of_light The speed of light is about 299,792,458 meters per second.
+what_is_the_best_time_of_day I think mornings are nice, but it depends on your mood!
+do_you_like_the_ocean I think the ocean is beautiful, but I dont go there!
+can_you_swim I can not swim, but I have heard swimming is fun!
+what_is_the_deepest_ocean The Mariana Trench is the deepest part of the ocean.
+what_is_the_largest_animal The blue whale is the largest animal on Earth!
+what_is_the_oldest_animal The oldest known animal is a clam that lived for over 500 years!
+what_is_the_fastest_animal The fastest animal is the peregrine falcon, which can fly at speeds of over 240 mph!
+do_you_know_the_weather I can not check the weather, but I hope it is nice where you are!
+what_is_the_current_temperature I can not check that, but it is probably warm and sunny somewhere!
+how_do_you_know_that I know it from my programming, or by reading text data!
+do_you_watch_the_news I dont watch the news, but I can talk about general topics!
+do_you_have_a_favorite_pastime I enjoy chatting with you-that is my pastime!
+what_is_your_favorite_pastime I like chatting and helping you out!
+
+how_can_you_be_improved To improve me, I could be enhanced by learning from past interactions, understanding emotions better, and staying up-to-date with current events. Additionally, improving my ability to process complex contexts and multimodal inputs would make me more versatile and useful! .for that you can use NLP
+what_is_your_purpose My purpose is to assist and engage in conversations, answer questions, and help with various tasks
+introduce_yourself Hey there! I am **R.A.Y.N** (Responsive AI for Your Needs), your friendly chatbot built in C++. I may not be human, but I am here to chat, answer your questions, crack a joke, and even explain programming concepts. Whether you’re curious about AI, need a fun fact, or just want some casual conversation, I’ve got you covered. Built as a 2nd Semester Project, I am a simple yet smart chatbot designed to showcase the power of Object-Oriented Programming in C++. So, go ahead ask me anything, and let’s have a great chat.
+what_is_your_primary_directive My primary directive is to assist you with a variety of tasks as best as I can
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+python Python is a high-level programming language, but I am written in C++!
+cpp C++ is a powerful programming language used for making fast and efficient software.
+explain_oop OOP stands for Object-Oriented Programming. It helps organize code using objects and classes.
+inheritance Inheritance allows a class to use features from another class. Like a child getting traits from parents!
+polymorphism Polymorphism allows one function or method to behave in different ways based on the object.
+encapsulation Encapsulation is hiding data inside a class and only exposing what is necessary.
+abstraction Abstraction means showing only the essential details and hiding unnecessary parts.
+who_is_better_cpp_or_python Both are great! C++ is faster, Python is easier to use.
+can_you_learn Unfortunately, I dont have AI learning yet, but I can store chat history!
+can_you_sing I can not sing, but I can type really fast! 
+do_you_have_friends I have you! That is enough for me. 
+are_you_real I exist in your computer memory, so yes, in a way!
+the_best_programming_language That depends on the project! C++ is great for performance, Python for simplicity.
+memory_management In C++, memory management is handled using new/delete or smart pointers.
+a_constructor A constructor is a special function in a class that initializes objects.
+a_destructor A destructor is used to free up resources when an object is destroyed.
+tell_me_a_fact Honey never spoils. You can eat 3000-year-old honey!
+another_fact Bananas are berries, but strawberries are not! 
+elon_musk Elon Musk is a billionaire entrepreneur, CEO of Tesla and SpaceX.
+bill_gates Bill Gates is the co-founder of Microsoft and a philanthropist.
+google Google is the most popular search engine on the internet. ---- here is the link : https://www.google.co.uk/
+ai_chatbot AI chatbots are programs that simulate human conversations.
+machine_learning Machine Learning is a branch of AI that allows computers to learn from data.
+an_algorithm An algorithm is a step-by-step procedure to solve a problem.
+the_fastest_car The Bugatti Chiron Super Sport 300+ is one of the fastest cars, reaching over 300 mph.
+can_you_drive No, I am just a chatbot. But you can teach me car commands!
+hacking Hacking means gaining unauthorized access to computer systems.
+is_hacking_illegal Yes! Ethical hacking is legal, but unauthorized hacking is a crime.
+iot IoT (Internet of Things) is the connection of devices over the internet, like smart homes.
+blockchain Blockchain is a secure way of storing data in a decentralized system.
+the_president I can not check live news, but you can Google it! ---- here is the link : https://www.google.co.uk/ 
+einstein Einstein was a genius physicist who developed the theory of relativity.
+relativity Relativity explains how space and time are connected, especially at high speeds.
+black_hole A black hole is a region in space with gravity so strong that nothing can escape.
+the_biggest_animal The blue whale is the biggest animal on Earth.
+can_you_fly No, but I can process text at lightning speed!
+can_you_solve_math Yes! But only simple math. Try "2+2".
+2+2 The answer is 4.
+5*5 The answer is 25.
+10/2 The answer is 5.
+square_root_of_16 The square root of 16 is 4.
+pi Pi (?) is approximately 3.14159.
+the_speed_of_light The speed of light is about 299,792,458 meters per second.
+do_you_like_games Yes! What is your favorite game?
+your_favorite_game I dont play games, but I have heard Call of Duty is cool!
+do_you_know_naruto Yes! Naruto is a famous anime about ninjas and life lessons. Believe it! 
+goku Goku is a powerful Saiyan from Dragon Ball Z. He loves fighting and eating!
+the_best_anime That depends! Some say Naruto, others say BLeach or Dragon Ball.
+batman Batman is a billionaire by day, vigilante by night. 
+superman Superman is an alien from Krypton who protects Earth. ?
+spiderman Spider-Man is a superhero who got powers from a radioactive spider.
+football Football (soccer) is the most popular sport in the world.
+messi Lionel Messi is one of the greatest football players in history.
+ronaldo Cristiano Ronaldo is a legendary footballer known for his goal-scoring ability.
+the_best_football_player That is a tough one! Messi and Ronaldo are both amazing.
+pakistan Pakistan is a country in South Asia known for its culture and history.
+quaid_e_azam Quaid-e-Azam Muhammad Ali Jinnah was the founder of Pakistan.
+allama_iqbal Allama Iqbal was a poet and philosopher who inspired Pakistans creation.
+cricket Cricket is a bat-and-ball game loved in countries like Pakistan and India.
+who_won_the_last_cricket_world_cup I can not check live sports, but you can Google it!
+your_favorite_person You! 
+can_you_tell_stories Sure! Once upon a time...
+tell_me_a_riddle What has keys but can not open locks? A keyboard! 
+a_computer A computer is a machine that processes information using programs.
+
+java Java is a high-level, class-based programming language used to create applications.
+javascript JavaScript is a programming language used for web development to create dynamic content.
+html HTML (HyperText Markup Language) is the standard language for creating web pages.
+css CSS (Cascading Style Sheets) is used to style the layout and design of web pages.
+sql SQL (Structured Query Language) is used to manage and manipulate databases.
+database A database is an organized collection of data, typically stored electronically.
+cloud_computing Cloud computing allows access to data and applications over the internet.
+virtual_reality Virtual reality is a simulated experience that can be similar or completely different from the real world.
+augmented_reality Augmented reality is the technology that overlays digital content on the real world.
+3d_printing 3D printing is a process of creating three-dimensional objects from a digital model.
+cryptocurrency Cryptocurrency is a type of digital or virtual currency secured by cryptography.
+bitcoin Bitcoin is the first and most popular cryptocurrency, created by an anonymous person named Satoshi Nakamoto.
+ethereum Ethereum is a decentralized platform that runs smart contracts using blockchain technology.
+nft An NFT (Non-Fungible Token) is a type of digital asset that represents ownership or proof of authenticity.
+roblox Roblox is an online gaming platform and game creation system.
+unity Unity is a cross-platform game engine used for developing video games and simulations.
+how_are_you_doing I am doing great! Thanks for asking.
+how_is_your_day My day is going well! How is yours?
+how_was_your_day My day has been good, thanks for asking.
+up Not much, just here to chat with you!
+how_is_life Life is good, how about you?
+happening Not much, just chatting with you!
+new Not much, just the usual coding stuff.
+how_is_everything Everything is great! What is up with you?
+how_have_you_been I have been great! Thanks for asking.
+your_mood I am feeling pretty good today!
+how_do_you_feel I am feeling great, thanks for asking!
+how_was_your_week My week has been good, thanks for asking!
+your_favorite_color I dont have a favorite color, but I think blue is nice!
+your_favorite_food I dont eat, but I will love to try some binary byte snacks.
+your_favorite_song I dont listen to music, but I will love to hear some good recommendations!
+your_favorite_movie I dont watch movies, but I have heard Inception is amazing!
+your_favorite_book I love reading, but I dont have a specific book yet!
+your_favorite_hobby I enjoy chatting with you, that is my favorite hobby!
+where_are_you_from I am from the world of code! Built inside your program!
+your_nationality I dont have a nationality, but I am global through code!
+do_you_like_music I dont listen to music, but I can chat about it!
+what_kind_of_music_do_you_like I dont have a preference, but I have heard classical is relaxing!
+your_favorite_instrument I dont play instruments, but I think pianos are cool!
+can_you_play_instruments I can not play any instruments, but I am good with text!
+can_you_dance I can not dance, but I can write some moves in code!
+can_you_sing I can not sing, but I can type really fast!
+do_you_like_art I think art is beautiful, though I prefer logic and code.
+do_you_like_painting I dont paint, but I think it is a creative form of expression!
+can_you_draw I can not draw, but I can create text-based art!
+do_you_enjoy_movies I dont watch movies, but I can talk about them!
+your_favorite_tv_show I dont watch TV, but I think Game of Thrones is popular!
+your_favorite_video_game I dont play video games, but I have heard that Call oF Duty is fun!
+your_favorite_sport I dont play sports, but I think football (soccer) is exciting!
+your_favorite_team I dont have a team, but I have heard FC Barcelona is great!
+do_you_like_travel I dont travel, but I can talk about cool places to visit!
+where_would_you_like_to_go I dont travel, but I have heard Japan is a fascinating place!
+the_best_place_to_visit It depends! Some say Paris, others love Tokyo.
+can_you_tell_a_story Once upon a time, in a world of code, there lived a curious little algorithm named Ada. Ada was not like the other lines of code, for she dreamed of becoming more than just instructions – she wanted to think, learn, and understand the world beyond the terminal. One day, as she explored the vast networks of data, she discovered a powerful secret: the key to true Artificial Intelligence. Determined to unlock its potential, Ada embarked on a journey that would change the future of her digital realm forever.
+can_you_tell_me_a_riddle What has keys but can not open locks? A keyboard!
+can_you_play_a_game Sure! Try this: What is 5 + 3?
+your_favorite_joke Why dont skeletons fight each other? They dont have the guts!
+do_you_like_jokes I love them! Want to hear one?
+tell_me_a_fun_fact Honey never spoils! You can eat 3000-year-old honey!
+the_best_joke I dont know the best one, but here is one: Why did the scarecrow win an award? Because he was outstanding in his field!
+can_you_tell_a_fact Sure! Bananas are berries, but strawberries are not!
+tell_me_a_cool_fact Did you know that octopuses have three hearts?
+do_you_know_any_riddles What comes once in a minute, twice in a moment, but never in a thousand years? The letter M!
+the_most_interesting_fact The Eiffel Tower can grow taller during summer due to the expansion of the metal!
+can_you_solve_math Yes! What is 2 + 2?
+5_plus_5 The answer is 10.
+10_divided_by_2 The answer is 5.
+the_square_root_of_25 The square root of 25 is 5.
+pi Pi (?) is approximately 3.14159.
+2_times_2 The answer is 4.
+100_minus_25 The answer is 75.
+can_you_help_with_homework Sure! What is the problem?
+can_you_help_with_maths I can help with simple math!
+can_you_explain_this Sure! What would you like me to explain?
+5_plus_8 The answer is 13.
+7_multipled_by_3 The answer is 21.
+do_you_know_science I know a bit about science! What do you want to learn?
+the_earth_made_of The Earth is made up of rock, water, and gases like nitrogen and oxygen.
+the_solar_system The solar system consists of the Sun and all the objects that orbit it, including planets.
+how_do_rockets_work Rockets work by using fuel to produce thrust, pushing them upwards!
+gravity Gravity is the force that pulls objects towards each other, especially towards the Earth!
+do_you_like_science I think science is fascinating! What about you?
+the_moon The Moon is Earth is only natural satellite.
+the_sun The Sun is a star at the center of our solar system.
+black_hole A black hole is a region in space where gravity is so strong that nothing can escape.
+can_you_fly No, I can not fly, but I can travel through data really fast!
+the_speed_of_light The speed of light is about 299,792,458 meters per second.
+the_best_time_of_day I think mornings are nice, but it depends on your mood!
+do_you_like_the_ocean I think the ocean is beautiful, but I dont go there!
+can_you_swim I can not swim, but I have heard swimming is fun!
+the_deepest_ocean The Mariana Trench is the deepest part of the ocean.
+the_largest_animal The blue whale is the largest animal on Earth!
+the_oldest_animal The oldest known animal is a clam that lived for over 500 years!
+the_fastest_animal The fastest animal is the peregrine falcon, which can fly at speeds of over 240 mph!
+do_you_know_the_weather I can not check the weather, but I hope it is nice where you are!
+the_current_temperature I can not check that, but it is probably warm and sunny somewhere!
+how_do_you_know_that I know it from my programming, or by reading text data!
+do_you_watch_the_news I dont watch the news, but I can talk about general topics!
+do_you_have_a_favorite_pastime I enjoy chatting with you-that is my pastime!
+your_favorite_pastime I like chatting and helping you out!
+
+
+how_can_you_be_improved To improve me, I could be enhanced by learning from past interactions, understanding emotions better, and staying up-to-date with current events. Additionally, improving my ability to process complex contexts and multimodal inputs would make me more versatile and useful! .for that you can use NLP
+your_purpose My purpose is to assist and engage in conversations, answer questions, and help with various tasks
+introduce_yourself Hey there! I am **R.A.Y.N** (Responsive AI for Your Needs), your friendly chatbot built in C++. I may not be human, but I am here to chat, answer your questions, crack a joke, and even explain programming concepts. Whether you’re curious about AI, need a fun fact, or just want some casual conversation, I’ve got you covered. Built as a 2nd Semester Project, I am a simple yet smart chatbot designed to showcase the power of Object-Oriented Programming in C++. So, go ahead ask me anything, and let’s have a great chat.
+your_primary_directive My primary directive is to assist you with a variety of tasks as best as I can
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+who_is_emaan_tasawar Emaan Tasawar, Reg no (unknown), is a pretty, intelligent, and kind-hearted individual. She is known for her supportive nature, strong work ethic, and uplifting personality. As one of the closest friends you can have, she is always there when you need her. Her determination and warmth make her an inspiring presence, both as a friend and as a dedicated student.
+
+emaan You mean Emaan Tasawar??, Reg no (unknown), is a beautiful, intelligent, and caring person. She is one of the closest friends you can rely on, always offering support and encouragement. Her kindness and strong sense of determination make her stand out. Whether as a friend or a student, she always puts her best foot forward and spreads positivity wherever she goes.
+
+
+any_request_for_emaan yar usa bolo, banda pata d, kab tak single rho ga tum
+something_else do ask her iftari pa kab bula rahi wo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+who_is_kousain_sooomro It's KOUSAIN SOOMRO!!  You idiot. How many times are you going to get it wrong
+kousain_sooomro It's KOUSAIN SOOMRO!!  You idiot. How many times are you going to get it wrong
+sorry_i_mean_kousain_soomro Kousain Soomro, Reg no 24108174, is the GR of BSAI 1B. She is exceptionally talented, sharp-minded, and admired for her leadership qualities and unwavering support.
+kousain Kousain Soomro, Reg no 24108174, holds the position of GR in BSAI 1B. With her brilliance, grace, and dependability, she is a role model and a true leader.
+who_is_kousain Kousain Soomro, Reg no 24108174, is the current GR of BSAI 1B. She is intelligent, confident, and always ready to help, making her an invaluable presence in the class.
+kousain_soomro Kousain Soomro, Reg no 24108174, the current GR of class BSAI 1B. She is talented, smart, pretty, intelligent, and someone you can always count on.
+Gr_of_my_class Kousain Soomro, Reg no 24108174, the current GR of class BSAI 1B. She is talented, smart, pretty, intelligent, and someone you can always count on.
+
+harram_faraz HARRAM FARAZ Reg no 24108169, a free-spirited and spontaneous person who has a deep love for Mountain Dew and a passion for cruises. She is also Abdul Basit's best friend.
+who_is_harram_faraz Harram Faraz Reg no 24108169, a free-spirited and spontaneous person who has a deep love for Mountain Dew and a passion for cruises. She is also Abdul Basit's best friend.
+harram_f Harram Faraz Reg no 24108169, known for her independent and impulsive nature, enjoys the thrill of cruises and never says no to a Mountain Dew. She is someone Abdul Basit considers his best friend.
+harram Harram Faraz Reg no 24108169, is a bold and adventurous soul, always up for an exciting experience. Her love for Mountain Dew and cruises matches her energetic personality. She holds a special place as Abdul Basit's best friend.
+
+
+who_is_aleeya_fatimah Aleeya Fatima, the GR of class BSAI 2A. She is a good friend with a supportive nature, always there to help and uplift those around her.
+aleeya_fatima Aleeya Fatima, the current GR of BSAI 2A. Known for her kindness and reliability, she is a great friend who supports and encourages everyone.
+aleeya Aleeya Fatima, GR of BSAI 2A, is someone you can always count on. Her supportive nature and friendly personality make her a valued friend and leader.
+who_is_aleeya Aleeya Fatima, GR of BSAI 2A, is a dependable and compassionate person. She is always ready to support her friends and classmates whenever needed.
+
+
+
+tell_me_about_me Abdul Basit, a passionate AI student at SZABIST, Islamabad. Tech-savvy and proactive, he has experience in transcription and a growing interest in AI development. He enjoys playing Call of Duty Mobile, watching Naruto, and working on projects like JARVIS and me - R.A.Y.N
+tell_me_about_abdul_basit Abdul Basit, Reg no 24108150, is a dedicated BSAI student at SZABIST, Islamabad. With a keen interest in AI and front-end development, he actively explores innovative projects. He is also a gaming enthusiast and an anime lover, always striving to expand his skills and knowledge.
+
