@@ -1,0 +1,660 @@
+#include <algorithm>
+#include <chrono>
+#include <cctype>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <random>
+#include <sstream>
+#include <string>
+#include <vector>
+
+class RAYN {
+private:
+    // ------------------------------------------------------------
+    // Configuration
+    // ------------------------------------------------------------
+    struct Config {
+        std::string name = "R.A.Y.N.";
+        std::string version = "2.0";
+        std::string historyFile = "chat_history.txt";
+        std::string knowledgeFile = "responses.txt";
+    };
+
+    Config config;
+
+    // ------------------------------------------------------------
+    // Conversation memory
+    // ------------------------------------------------------------
+    struct Message {
+        std::string role;
+        std::string content;
+    };
+
+    std::vector<Message> memory;
+
+    // ------------------------------------------------------------
+    // Knowledge base
+    // ------------------------------------------------------------
+    std::map<std::string, std::vector<std::string>> knowledge;
+
+    // Random engine for varied responses
+    std::mt19937 rng{
+        static_cast<unsigned int>(
+            std::chrono::steady_clock::now()
+                .time_since_epoch()
+                .count()
+        )
+    };
+
+public:
+
+    // ============================================================
+    // Constructor
+    // ============================================================
+    RAYN() {
+        initialize();
+    }
+
+    // ============================================================
+    // Initialization
+    // ============================================================
+    void initialize() {
+        loadKnowledge();
+        addBuiltInKnowledge();
+    }
+
+    // ============================================================
+    // Main response engine
+    // ============================================================
+    std::string respond(const std::string& originalInput) {
+
+        std::string input = normalize(originalInput);
+
+        if (input.empty()) {
+            return "I didn't receive any input. Try asking me something.";
+        }
+
+        // Store user message
+        memory.push_back({"user", originalInput});
+
+        // --------------------------------------------------------
+        // System commands
+        // --------------------------------------------------------
+        if (input == "/help") {
+            return help();
+        }
+
+        if (input == "/status") {
+            return status();
+        }
+
+        if (input == "/history") {
+            return showHistory();
+        }
+
+        if (input == "/clear") {
+            memory.clear();
+            return "Conversation memory cleared. Fresh session initialized.";
+        }
+
+        if (input == "/exit" ||
+            input == "exit" ||
+            input == "quit" ||
+            input == "stop") {
+
+            return "SESSION_TERMINATED";
+        }
+
+        // --------------------------------------------------------
+        // Intent detection
+        // --------------------------------------------------------
+        std::string response = processIntent(input);
+
+        // Store AI response
+        memory.push_back({"assistant", response});
+
+        return response;
+    }
+
+private:
+
+    // ============================================================
+    // Normalize user input
+    // ============================================================
+    std::string normalize(const std::string& text) const {
+
+        std::string result;
+
+        for (char c : text) {
+
+            if (std::isalnum(static_cast<unsigned char>(c)) ||
+                std::isspace(static_cast<unsigned char>(c)) ||
+                c == '/' ||
+                c == '?' ||
+                c == '!') {
+
+                result += static_cast<char>(
+                    std::tolower(static_cast<unsigned char>(c))
+                );
+            }
+        }
+
+        // Remove duplicate spaces
+        std::string cleaned;
+        bool previousSpace = false;
+
+        for (char c : result) {
+
+            if (std::isspace(static_cast<unsigned char>(c))) {
+
+                if (!previousSpace) {
+                    cleaned += ' ';
+                }
+
+                previousSpace = true;
+
+            } else {
+
+                cleaned += c;
+                previousSpace = false;
+            }
+        }
+
+        if (!cleaned.empty() && cleaned.back() == ' ') {
+            cleaned.pop_back();
+        }
+
+        return cleaned;
+    }
+
+    // ============================================================
+    // Add built-in knowledge
+    // ============================================================
+    void addBuiltInKnowledge() {
+
+        knowledge["hello"] = {
+            "Hello! I'm R.A.Y.N. How can I assist you?",
+            "Hello. R.A.Y.N. online and ready.",
+            "Hey! What would you like to talk about?"
+        };
+
+        knowledge["how are you"] = {
+            "All systems are operating normally.",
+            "I'm functioning within normal parameters.",
+            "I'm doing great. My processors are feeling productive."
+        };
+
+        knowledge["name"] = {
+            "I'm R.A.Y.N. — Responsive AI for Your Needs.",
+            "My designation is R.A.Y.N., your personal AI assistant."
+        };
+
+        knowledge["who are you"] = {
+            "I'm R.A.Y.N., a conversational AI system designed to understand your requests and respond intelligently.",
+            "I'm R.A.Y.N. I process your input, identify intent, maintain conversation memory, and generate a response."
+        };
+
+        knowledge["thanks"] = {
+            "You're welcome.",
+            "Anytime.",
+            "Happy to help."
+        };
+
+        knowledge["joke"] = {
+            "Why did the computer go to the doctor? It had a byte problem.",
+            "I would tell you a UDP joke, but you might not get it.",
+            "There are 10 kinds of people: those who understand binary and those who don't."
+        };
+    }
+
+    // ============================================================
+    // Load external knowledge
+    //
+    // File format:
+    //
+    // hello|Hello there!
+    // hello|Nice to see you.
+    // joke|Why did the computer...
+    //
+    // ============================================================
+    void loadKnowledge() {
+
+        std::ifstream file(config.knowledgeFile);
+
+        if (!file) {
+            return;
+        }
+
+        std::string line;
+
+        while (std::getline(file, line)) {
+
+            if (line.empty()) {
+                continue;
+            }
+
+            const std::size_t separator = line.find('|');
+
+            if (separator == std::string::npos) {
+                continue;
+            }
+
+            std::string key = line.substr(0, separator);
+            std::string value = line.substr(separator + 1);
+
+            key = normalize(key);
+
+            if (!key.empty() && !value.empty()) {
+                knowledge[key].push_back(value);
+            }
+        }
+    }
+
+    // ============================================================
+    // Detect user intent
+    // ============================================================
+    std::string processIntent(const std::string& input) {
+
+        // Exact knowledge match
+        auto exactMatch = knowledge.find(input);
+
+        if (exactMatch != knowledge.end()) {
+            return randomResponse(exactMatch->second);
+        }
+
+        // --------------------------------------------------------
+        // Greeting intent
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "hello",
+            "hi",
+            "hey",
+            "good morning",
+            "good afternoon",
+            "good evening"
+        })) {
+
+            return randomResponse(knowledge["hello"]);
+        }
+
+        // --------------------------------------------------------
+        // Identity intent
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "your name",
+            "who are you",
+            "what are you"
+        })) {
+
+            return randomResponse(knowledge["name"]);
+        }
+
+        // --------------------------------------------------------
+        // Status intent
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "how are you",
+            "are you okay",
+            "system status"
+        })) {
+
+            return randomResponse(knowledge["how are you"]);
+        }
+
+        // --------------------------------------------------------
+        // Joke intent
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "tell me a joke",
+            "make me laugh",
+            "joke"
+        })) {
+
+            return randomResponse(knowledge["joke"]);
+        }
+
+        // --------------------------------------------------------
+        // Thanks intent
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "thank you",
+            "thanks",
+            "thx"
+        })) {
+
+            return randomResponse(knowledge["thanks"]);
+        }
+
+        // --------------------------------------------------------
+        // Conversation awareness
+        // --------------------------------------------------------
+        if (containsAny(input, {
+            "what did i say",
+            "remember what i said",
+            "our conversation"
+        })) {
+
+            return conversationSummary();
+        }
+
+        // --------------------------------------------------------
+        // Question detection
+        // --------------------------------------------------------
+        if (isQuestion(input)) {
+
+            return intelligentFallback(input);
+        }
+
+        // --------------------------------------------------------
+        // Generic conversation
+        // --------------------------------------------------------
+        return intelligentFallback(input);
+    }
+
+    // ============================================================
+    // Check whether text contains one of several phrases
+    // ============================================================
+    bool containsAny(
+        const std::string& text,
+        const std::vector<std::string>& phrases
+    ) const {
+
+        for (const auto& phrase : phrases) {
+
+            if (text.find(phrase) != std::string::npos) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // ============================================================
+    // Question detector
+    // ============================================================
+    bool isQuestion(const std::string& input) const {
+
+        if (input.find('?') != std::string::npos) {
+            return true;
+        }
+
+        return containsAny(input, {
+            "what",
+            "why",
+            "how",
+            "when",
+            "where",
+            "who",
+            "can you",
+            "could you",
+            "is",
+            "are"
+        });
+    }
+
+    // ============================================================
+    // AI-style fallback
+    // ============================================================
+    std::string intelligentFallback(const std::string& input) {
+
+        std::ostringstream response;
+
+        response << "I understand your message, but my current knowledge "
+                 << "core doesn't contain enough information to answer that "
+                 << "reliably.";
+
+        response << "\n\nInput analyzed: \"" << input << "\"";
+
+        response << "\nConfidence: LOW";
+
+        response << "\n\nYou can teach me by adding a response to "
+                 << config.knowledgeFile << ".";
+
+        return response.str();
+    }
+
+    // ============================================================
+    // Random response selection
+    // ============================================================
+    std::string randomResponse(
+        const std::vector<std::string>& responses
+    ) {
+
+        if (responses.empty()) {
+            return intelligentFallback("unknown");
+        }
+
+        std::uniform_int_distribution<std::size_t> distribution(
+            0,
+            responses.size() - 1
+        );
+
+        return responses[distribution(rng)];
+    }
+
+    // ============================================================
+    // Conversation summary
+    // ============================================================
+    std::string conversationSummary() const {
+
+        if (memory.empty()) {
+            return "There is no conversation history in my current memory.";
+        }
+
+        std::ostringstream output;
+
+        output << "I currently remember "
+               << memory.size()
+               << " conversation messages.";
+
+        return output.str();
+    }
+
+    // ============================================================
+    // Help command
+    // ============================================================
+    std::string help() const {
+
+        return
+            "R.A.Y.N. COMMAND CENTER\n"
+            "-----------------------\n"
+            "/help    - Show available commands\n"
+            "/status  - Show system status\n"
+            "/history - Display conversation memory\n"
+            "/clear   - Clear current memory\n"
+            "/exit    - Terminate R.A.Y.N.\n\n"
+            "You can also speak normally and R.A.Y.N. "
+            "will attempt to determine your intent.";
+    }
+
+    // ============================================================
+    // System status
+    // ============================================================
+    std::string status() const {
+
+        std::ostringstream output;
+
+        output << "R.A.Y.N. SYSTEM STATUS\n"
+               << "----------------------\n"
+               << "Core:       ONLINE\n"
+               << "Version:    " << config.version << "\n"
+               << "Memory:     " << memory.size() << " messages\n"
+               << "Knowledge:  " << knowledge.size() << " intents\n"
+               << "Mode:       LOCAL AI\n"
+               << "Confidence: VARIABLE";
+
+        return output.str();
+    }
+
+    // ============================================================
+    // Show conversation history
+    // ============================================================
+    std::string showHistory() const {
+
+        if (memory.empty()) {
+            return "Memory is currently empty.";
+        }
+
+        std::ostringstream output;
+
+        output << "\n=== R.A.Y.N. MEMORY ===\n";
+
+        for (const auto& message : memory) {
+
+            output << message.role
+                   << ": "
+                   << message.content
+                   << '\n';
+        }
+
+        return output.str();
+    }
+
+public:
+
+    // ============================================================
+    // Persistent history
+    // ============================================================
+    void saveChatHistory(
+        const std::string& user,
+        const std::string& response
+    ) const {
+
+        std::ofstream file(
+            config.historyFile,
+            std::ios::app
+        );
+
+        if (!file) {
+            return;
+        }
+
+        file << "USER: "
+             << user
+             << '\n';
+
+        file << "R.A.Y.N.: "
+             << response
+             << "\n\n";
+    }
+
+    // ============================================================
+    // Public configuration display
+    // ============================================================
+    const std::string& getName() const {
+        return config.name;
+    }
+};
+
+
+// =================================================================
+// Terminal UI
+// =================================================================
+class TerminalUI {
+
+public:
+
+    static void printBanner() {
+
+        std::cout
+            << "\n"
+            << "╔══════════════════════════════════════════════╗\n"
+            << "║              R . A . Y . N .                 ║\n"
+            << "║        RESPONSIVE AI FOR YOUR NEEDS          ║\n"
+            << "╠══════════════════════════════════════════════╣\n"
+            << "║              LOCAL AI CORE v2.0              ║\n"
+            << "║                                              ║\n"
+            << "║   [CORE]       ONLINE                       ║\n"
+            << "║   [MEMORY]     READY                        ║\n"
+            << "║   [KNOWLEDGE]  LOADED                       ║\n"
+            << "║                                              ║\n"
+            << "║   Type /help for commands                   ║\n"
+            << "╚══════════════════════════════════════════════╝\n\n";
+    }
+
+    static void printThinking() {
+        std::cout << "R.A.Y.N. is processing...\n";
+    }
+};
+
+
+// =================================================================
+// Application
+// =================================================================
+class Application {
+
+private:
+    RAYN rayn;
+
+public:
+
+    void run() {
+
+        TerminalUI::printBanner();
+
+        std::cout
+            << "R.A.Y.N.: Systems initialized.\n"
+            << "R.A.Y.N.: Hello, user. How can I assist you?\n\n";
+
+        while (true) {
+
+            std::cout << "You: ";
+
+            std::string input;
+
+            if (!std::getline(std::cin, input)) {
+                break;
+            }
+
+            if (input.empty()) {
+                continue;
+            }
+
+            TerminalUI::printThinking();
+
+            std::string response = rayn.respond(input);
+
+            if (response == "SESSION_TERMINATED") {
+
+                std::cout
+                    << "\nR.A.Y.N.: Shutting down safely...\n"
+                    << "R.A.Y.N.: Session terminated.\n";
+
+                break;
+            }
+
+            std::cout
+                << "\nR.A.Y.N.: "
+                << response
+                << "\n";
+
+            rayn.saveChatHistory(input, response);
+        }
+    }
+};
+
+
+// =================================================================
+// Program entry point
+// =================================================================
+int main() {
+
+    try {
+
+        Application app;
+        app.run();
+
+    } catch (const std::exception& error) {
+
+        std::cerr
+            << "\n[FATAL ERROR] "
+            << error.what()
+            << '\n';
+
+        return 1;
+    }
+
+    return 0;
+}
