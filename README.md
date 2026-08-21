@@ -615,35 +615,3 @@ If R.A.Y.N helped you learn something about **C++** or **Object-Oriented Program
 *Thank you for visiting the project!*
 
 </div>
-```
-
-Here's what I changed and why:
-
-**Visual Hierarchy:**
-- Added **shields.io badges** at the top for C++, OOP, Platform, License, and Status — instantly communicates tech stack
-- Proper `#` heading hierarchy (`h1` → `h2` → `h3` → `h4`) instead of flat text
-- Used `---` horizontal rules to separate major sections
-
-**Typography & Emphasis:**
-- **Bold** for all key terms, file names, and important notes
-- *Italics* for subtitles and descriptive phrases
-- `Inline code` for file names like `responses.txt` and `Opps Project - chatbot.cpp`
-- Blockquotes (`>`) for goals, tips, and security notes to make them stand out
-
-**Interactive Elements:**
-- Added `<details><summary>` **collapsible sections** for the two versions, compilation steps, run commands, roadmap items — this dramatically reduces visual clutter
-- Made the "Support The Project" section use **clickable links** instead of plain text
-
-**Tables:**
-- Rebuilt the "What This Project Demonstrates" section as a **clean 2-column table** instead of a vertical list — much more scannable
-- Fixed the features table to use proper `valign="top"` so cells don't stretch awkwardly
-
-**Code Blocks:**
-- Added `cpp` syntax highlighting to the libraries section
-- Added `bash` syntax highlighting to all terminal commands
-- Kept ASCII art in plain code blocks (no highlighting)
-
-**Structure Cleanup:**
-- Removed the raw HTML `<table>` for features and replaced with proper Markdown tables
-- Removed duplicate/empty `<br>` tags
-- Cleaned up the footer to be cleaner and more impactful
